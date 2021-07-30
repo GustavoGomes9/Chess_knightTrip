@@ -12,10 +12,12 @@ def loadImage():
 
 def main():
     p.init()
+    position = input("casa: ")
     screen = p.display.set_mode((WIDTH, HEIGHT))
     clock = p.time.Clock()
     screen.fill(p.Color("white"))
     gs = ChessEngine.GameState()
+    gs.choosePosition(position) # não pronta
     loadImage() # just once 
     running = True
 
@@ -31,7 +33,7 @@ def drawGameState(screen, gs):
 
 
 def drawBoard(screen):
-    colors = [p.Color(114, 47, 55), p.Color(210,180,140)]
+    colors = [p.Color(165, 99, 66), p.Color(242,209 ,165)]
     for r in range(DIMENSION):
         for c in range(DIMENSION):
             color = colors[((r+c) % 2 )]
@@ -44,7 +46,5 @@ def drawPieces(screen, board):
             if piece != "--":
                 screen.blit(whiteKnight[piece], p.Rect(c*SQUARE_SIZE, r*SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
-
 if __name__ == "__main__":
     main()
-    
