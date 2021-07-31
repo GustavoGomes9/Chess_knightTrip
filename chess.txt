@@ -8,12 +8,12 @@ O cavalo é colocado no tabuleiro vazio e, seguindo as regras do jogo, precisa p
 ### Instruções
 Este desafio consiste em:
 - Criar um programa em Python que encontre uma solução para o passeio do cavalo.
-- O programa deve receber, via linha de comando, uma casa em notação algébrica de xadrez que será a posição inicial do cavalo.
+- O programa deve receber, via linha de comando, uma casa em notação algébrica de xadrez que será a posição inicial do cavalo. =============================
 - O programa deverá retornar uma sequência de posições em notação algébrica de xadrez indicando o caminho percorrido pelo cavalo a fim de preencher todo o tabuleiro, garantindo que ele não repita nenhuma posição.
 
 ### Exemplo
 Considere a seguinte entrada:
-./cavalo a1
+./cavalo a1          FEITOOOOOOOOOOOOOOOOOOOOOOOOO
 A saída deverá ser:
 ./cavalo a1
 a1
